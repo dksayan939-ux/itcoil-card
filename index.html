@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شركة الثقة الدولية</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body { 
+            font-family: 'Cairo', sans-serif; 
+            background-color: #ffffff; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            min-height: 100vh; 
+            margin: 0; 
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* مثلث أحمر - أعلى اليسار */
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 150px 150px 0 0;
+            border-color: #ff0000 transparent transparent transparent;
+            z-index: 1;
+        }
+
+        /* مثلث أزرق - أسفل اليمين */
+        body::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 0 0 150px 150px;
+            border-color: transparent transparent #0000ff transparent;
+            z-index: 1;
+        }
+
+        .card { 
+            width: 85%; 
+            max-width: 350px; 
+            text-align: center; 
+            background: #ffffff; 
+            padding: 30px 20px; 
+            border-radius: 15px; 
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            position: relative;
+            z-index: 10;
+        }
+
+        .logo { 
+            width: 200px; 
+            margin-bottom: 20px; 
+        }
+
+        h1 { font-size: 22px; color: #000; margin: 0px 0; }
+        p { color: #555; font-size: 14px; margin-bottom: 30px; }
+
+        .btn { 
+            display: block; 
+            background: #f1f1f1; 
+            color: #000; 
+            text-decoration: none; 
+            padding: 15px; 
+            margin: 10px 0; 
+            border-radius: 8px; 
+            font-weight: bold; 
+            font-size: 16px;
+            transition: 0.3s;
+            border: 1px solid #ddd;
+        }
+
+        .btn:hover { background: #e2e2e2; }
+
+        /* ألوان مخصصة لكل زر */
+        .btn-phone { border-right: 5px solid #22c55e; }
+        .btn-email { border-right: 5px solid #3b82f6; }
+        .btn-web { border-right: 5px solid #1d4ed8; }
+        .btn-fb { border-right: 5px solid #1877f2; }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <img src="logo.png" alt="Logo" class="logo">
+        <h1>شركة الثقة الدولية</h1>
+        <p>لتسويق المشتقات النفطية</p>
+
+        <a href="tel:+218912179980" class="btn btn-phone">+218 91-2179980</a>
+        <a href="mailto:deputy@itcoil.com.ly" class="btn btn-email">deputy@itcoil.com.ly</a>
+        <a href="https://itcoil.com.ly" class="btn btn-web">itcoil.com.ly</a>
+        <a href="https://www.facebook.com/share/1CiGm7N69s/" class="btn btn-fb">Facebook</a>
+    </div>
+
+</body>
+</html>
